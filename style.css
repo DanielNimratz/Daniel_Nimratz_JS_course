@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-weight: 900;
+}
+
+h2{
+    font-weight: 500;
+}
+
+
+.container {
+    display: flex;
+}
+
+header {
+    flex-direction: column;
+}
+
+.resp_note {
+    background-color: yellow;
+    text-align: center;
+    height: 50px;
+    font-weight: 700;
+}
+
+.top {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+}
+
