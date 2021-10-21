@@ -1,0 +1,58 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 27px;
+    margin: 10px 0px;
+}
+
+h5 {
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+h6 {
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+p {
+    font-size: 18px;
+}
+
+li {
+    font-size: 18px;
+}
+
+.header-image {
+    height: 350px;
+    width: 100%;
+}
+
+.projects-link {
+    color: #9A9483;
+}
+
+.jobs {
+    color: #ECAC5D;
+}
+
+.dates-place {
+    color: #8CA1A5;
+}
