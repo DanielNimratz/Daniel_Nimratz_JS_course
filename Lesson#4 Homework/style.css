@@ -1,0 +1,97 @@
+.box {
+    border: 2px solid;    
+    padding: 2px;
+
+}
+
+.black {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.green {    
+    border-color: green;
+    width: 98%;
+    height: 98%;
+}
+
+.coral {
+    border-color: coral;
+    width: 98%;
+    height: 98%;
+}
+
+.cube {
+    border: 2px solid;
+    margin: 2px;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+}
+
+.coral_cubes {
+    background-color: coral;
+}
+
+.grey_cubes {
+    background-color: darkgrey;
+}
+
+.green_cubes {
+    background-color: greenyellow;
+}
+
+.red_cubes {
+    background-color: red;
+}
+
+.purple_cubes {
+    background-color: purple;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.coral-figure {
+    position: relative;
+    top: 198px;
+    left: 145px;
+}
+
+.grey-figure {
+    position: relative;
+    top: -82px;
+    right: 238px;
+    transform: rotateY(180deg);   
+    text-align: left;
+    font-size: 0;
+}
+
+.green-figure {
+    position: relative;
+    top: -206px;
+    left: -118px;
+    font-size: 0;
+    text-align: left;
+    transform: rotate(270deg);
+
+}
+
+.red-figure {
+    position: relative;
+    top: -106px;
+    left: 72px;
+    transform: rotateY(180deg) rotateZ(90deg);   
+    text-align: left;
+    font-size: 0;
+}
+
+.purple-figure {
+    font-size: 0;
+    position: relative;
+    top: -276px;
+    left: 120px;
+}
