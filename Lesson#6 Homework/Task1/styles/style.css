@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body div {
+    border: 5px solid;
+}
+
+.biggest_square {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+}
+
+.nearly_circle {
+    width: 62px;
+    height: 62px;
+    border-radius: 25%; 
+}
+
+.nc1 {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+}
+
+.nc2 {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+}
+
+.nc3 {
+    position: absolute;
+    bottom: -35px;
+    right: -35px;
+}
+
+.nc4 {
+    position: absolute;
+    bottom: -35px;
+    left: -35px;
+} 
+
+.biggest_circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small_square {
+    width: 62.5px;
+    height: 62.5px;
+}
+
+.sq1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sq2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.sq3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.sq4 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+} 
