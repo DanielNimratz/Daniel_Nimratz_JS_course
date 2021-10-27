@@ -1,0 +1,45 @@
+.fixed_big_square {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 188px;
+    height: 188px;
+    margin-top: -94px;
+    /*half of height*/
+    margin-left: -94px;
+    /*half of width*/
+}
+
+.fixed_small_square {
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    margin: 3px;
+    border-radius: 2px;
+}
+
+.static_big_square {
+    width: 188px;
+    height: 188px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 750px auto 500px auto;
+}
+
+.static_small_square {
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    margin: 3px;
+    border-radius: 2px;
+}
+
+.hidden {
+    visibility: hidden;
+}

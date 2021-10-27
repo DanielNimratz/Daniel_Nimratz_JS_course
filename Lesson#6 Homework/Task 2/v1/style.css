@@ -1,7 +1,3 @@
-.grid {
-    display: grid;
-}
-
 .fixed_big_square {
     position: fixed;
     top: 50%;
@@ -10,7 +6,6 @@
     /*half of height*/
     margin-left: -101px;
     /*half of width*/
-    z-index: 3;
 }
 
 .fixed_small_square {
@@ -19,13 +14,12 @@
     background-color: blue;
     margin: 3px;
     border-radius: 2px;
-    z-index: 2;
 }
 
 .static_big_square {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: center; 
     margin-top: 750px;
     margin-bottom: 500px;
 }
