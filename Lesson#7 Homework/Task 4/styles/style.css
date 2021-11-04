@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right,darkslategray,cadetblue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.box {
+    height: 150px;
+    width: 300px;
+    border: 2px solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 1s;
+}
+
+#b1:hover {
+    height: 300px;
+    width: 600px;
+}
+#b2:hover {
+    height: 300px;
+    width: 600px;
+}
+#b3:hover {
+    height: 300px;
+    width: 600px;
+}
+#b4:hover {
+    height: 300px;
+    width: 600px;
+}
+#b5:hover {
+    height: 300px;
+    width: 600px;
+}
+#b6:hover {
+    height: 300px;
+    width: 600px;
+}
+#b7:hover {
+    height: 300px;
+    width: 600px;
+}
+#b8:hover {
+    height: 300px;
+    width: 600px;
+}
+#b9:hover {
+    height: 300px;
+    width: 600px;
+}
