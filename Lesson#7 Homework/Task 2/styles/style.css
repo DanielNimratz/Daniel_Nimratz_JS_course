@@ -1,0 +1,27 @@
+body {    
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,darkslategray,cadetblue);
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 10px;
+    transition: all 1s;
+}
+
+.box:hover {
+    height: 200px;
+    width: 200px;
+}
+
+.first {
+    background-color: #D8B6A4;
+}
+
+.second {
+    background-color: #AA14F0;
+}
