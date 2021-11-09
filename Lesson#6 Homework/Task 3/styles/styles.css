@@ -1,9 +1,51 @@
-/*Fonts to use: 
+/* 
+Fonts to use:
 font-family: 'Hammersmith One', sans-serif;
 font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif; */
+font-family: 'Roboto', sans-serif; 
+*/
+html {
+    height: 100vh;
+}
 
-.header {
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bg_images {
+    width: 100%;
+    height: auto;
+}
+.gradient {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
+
+.gradient:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;   
     opacity: 0.85;
     background-image: linear-gradient(to top, #09052f, #311d5e);
 }
+
+/* .gradient {
+    height: 100%;
+    width: 100%;
+    
+} */
+
+/* .header {
+    opacity: 0.85;
+    background-image: linear-gradient(to top, #09052f, #311d5e);
+} */
