@@ -5,7 +5,7 @@ let unit = num % 10;
 // "&" - остача від ділення 
 
 let condition_1 = 2 <= unit && unit <= 4;
-let condition_2 = decade !== 1;
+let condition_2 = decade !== 10;
 
 if (num == 1) {
     console.log(num, "стіл");
