@@ -4,48 +4,48 @@ font-family: 'Hammersmith One', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif; 
 */
-html {
+body {
+    margin: 0;
+    /* width: 100%; */
     height: 100vh;
 }
 
-body {
-    margin: 0;
-    width: 100%;
+header {
     height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.bg_images {
     width: 100%;
-    height: auto;
-}
-.gradient {
-    width: 100%;
-    height: auto;
-    display: inline-block;
+    background-image: url(images/first_bg.jpg);
+    background-size: cover;
     position: relative;
 }
 
-.gradient:after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    display: block;
+header::after {
+    content: '';
     position: absolute;
     top: 0;
-    left: 0;   
-    opacity: 0.85;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: linear-gradient(to top, #09052f, #311d5e);
+    opacity: 0.85;
 }
 
-/* .gradient {
-    height: 100%;
-    width: 100%;
-    
-} */
+.top_logo {
+    position: absolute;
+    width: 35%;
+    top: 15px;
+    text-align: center;
+}
 
-/* .header {
-    opacity: 0.85;
-    background-image: linear-gradient(to top, #09052f, #311d5e);
-} */
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: right;
+}
+
+.content {
+    z-index: 1;
+}
