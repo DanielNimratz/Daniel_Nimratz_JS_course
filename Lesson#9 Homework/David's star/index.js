@@ -12,13 +12,11 @@ for (let i = 0; i < num; i++) {
         result[i][j] = '*';
     }
 }
-
 for (let i = k; i < num + k; i++) {
     for (let j = i-k+2; j < (num * 2) - (i-k-1); j++) {
         result[i][j] = '*';
     }
 }
-
 for (let i = 0;i < num + k; i++) {
     console.log(result[i].join(''))
 }
