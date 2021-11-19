@@ -8,7 +8,7 @@ for (let i = 0; i <= num + k; i++) {
     }
 }
 for (let i = 0; i < num; i++) {
-    for (j = num - i; j < num + i +1; j++) {
+    for (j = num - i; j < num + i + 1; j++) {
         result[i][j] = '*';
     }
 }
