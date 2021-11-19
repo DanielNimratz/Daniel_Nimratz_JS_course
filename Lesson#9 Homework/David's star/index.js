@@ -1,9 +1,10 @@
-const num = parseInt(prompt('Height of David`s Star'));
+// const num = parseInt(prompt('Height of David`s Star'));
+const num = 4;
 const k = parseInt(num / 3);
 let result = [];
 for (let i = 0; i <= num + k; i++) {
     result[i] = [];
-    for (let j = 0; j < (2 * num) - 1; j++) {
+    for (let j = 0; j < (2 * num) -1; j++) {
         result[i][j] = ' ';
     }
 }
@@ -13,7 +14,7 @@ for (let i = 0; i < num; i++) {
     }
 }
 for (let i = k; i < num + k; i++) {
-    for (let j = i-k+2; j < (num * 2) - (i-k-1); j++) {
+    for (let j = i-k+1; j < (num * 2) - (i-k); j++) {
         result[i][j] = '*';
     }
 }
