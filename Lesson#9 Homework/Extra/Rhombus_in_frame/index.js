@@ -1,30 +1,36 @@
+h = parseInt(prompt("Lenght of a side"));
 let result = [];
-for (let i = 0; i < 9; i++) {
+let c = '';
+for (let i = 0; i < h * 2 + 3; i++) {
     result[i] = [];
-    if (i === 0 || i === 8) {
-        for (let j = 0; j < 13; j++) {
+    c = '';
+    for (let j = 0; j < h * 2 + 3; j++) {
+        if (i === 0 || i === h * 2 + 2) {
             result[i][j] = '*';
-        }
-    } else {
-        result[i][0] = '*';
-        for (let j = 1; j < 12; j++) {
+        } else {
             result[i][j] = ' ';
+            result[i][0] = '*';
+            result[i][h * 2 + 2] = '*';
         }
-        result[i][12] = '*';
+        c += ' ';
     }
 }
 
-for (let i = 1; i < 5; i++) {
-    for (let j = 7 - i; j < 6 + i; j++) {
-        result[i][j] = '*';
-    }
-}
-for (let i = 5; i < 8; i++) {
-    for (let j = i - 1; j < 14 - i; j++) {
+for (let i = 2; i < h + 2; i++) {
+    for (let j = (h + 3) - i; j < h + i; j++) {
         result[i][j] = '*';
     }
 }
 
-for (let i = 0; i < 9; i++) {
+for (let i = h + 2; i < h * 2 + 1; i++) {
+    for (let j = i - h + 1; j < (h * 2) - (i - h) + 2; j++) {
+        result[i][j] = '*';
+    }
+}
+
+for (let i = 0; i < h * 2 + 3; i++) {
     console.log(result[i].join(''));
+    if (i != h * 2 + 2) {
+        console.log(c);
+    }
 }

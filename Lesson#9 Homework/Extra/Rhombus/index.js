@@ -1,20 +1,25 @@
-for (let i = 0; i < 4; i++) {
-    let result = '';
-    for (let j = 3 - i; j > 0; j--) {
-        result += ' ';
+h = parseInt(prompt());
+result = [];
+const c = h * 2 - 1;
+for (let i = 0; i < c; i++) {
+    result[i] = [];
+    for (let j = 0; j < c; j++) {
+        result[i][j] = ' ';
     }
-    for (let j = i + (i + 1); j > 0; j--) {
-        result += '*';
-    }
-    console.log(result);
 }
-for (let i = 3; i > 0; i--) {
-    let result = '';
-    for (let j = i; j < 4; j++) {
-        result += ' ';
+
+for (let i = 0; i < h; i++) {
+    for (let j = h - 1 - i; j < h + i; j++) {
+        result[i][j] = '*';
     }
-    for (let j = i + (i - 1); j > 0; j--) {
-        result += '*';
+}
+
+for (let i = h; i < c; i++) {
+    for (let j = i - h + 1; j < (h * 2) - (i - h) - 2; j++) {
+        result[i][j] = '*';
     }
-    console.log(result);
+}
+
+for (let i = 0; i < c; i++) {
+    console.log(result[i].join(''));
 }
