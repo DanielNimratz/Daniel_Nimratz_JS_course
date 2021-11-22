@@ -26,7 +26,7 @@ for (let i = 2; i < h; i++) {
     }
 }
 
-for (let i = h; i < h * 2 - 3; i++) {
+for (let i = h; i < c- 2; i++) {
     for (let j = i - h + 3; j < h * 2 + (h - 4) - i; j++) {
         result[i][j] = ' ';
     }
