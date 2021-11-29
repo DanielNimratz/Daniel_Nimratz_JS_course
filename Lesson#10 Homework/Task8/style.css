@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding-top: 100px;
+    height: 100%;
+    width: 100%;
+    /* background-image: linear-gradient(to right,darkslategray,cadetblue); */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.box {
+    height: 150px;
+    width: 300px;
+    border: 3px solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* transition: all 1s; */
+}
