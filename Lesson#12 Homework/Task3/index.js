@@ -1,14 +1,11 @@
 let arr = [1, 3, 5, 3, 2, 6, 3];
-console.log(arr);
-function noRepeatArray(arr) {
-    let arr1 = [];
+function deleteParticularNumber(arr) {
+    parNum = +prompt("Which number will not be in the array?");
     for (i of arr) {
-        if (arr1.includes(i)) {
-            continue;
-        } else {
-            arr1.push(i);
+        if (i === parNum) {
+            arr.splice(arr.indexOf(i),1);
         }
     }
-    return arr1;
+    return arr;
 }
-console.log(noRepeatArray(arr));
+console.log(deleteParticularNumber(arr))
