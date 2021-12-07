@@ -8,4 +8,4 @@ function deleteParticularNumber(arr) {
     }
     return arr;
 }
-console.log(deleteParticularNumber(arr))
+console.log(deleteParticularNumber(arr));
