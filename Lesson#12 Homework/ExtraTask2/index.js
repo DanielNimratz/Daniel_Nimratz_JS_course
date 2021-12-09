@@ -1,23 +1,21 @@
-let arr = [5, 11, 5, 15];
-let a = 10;
-
-// [arr.indexOf(i), arr.indexOf(j)]
+let arr = [7, 1, 8, 9];
+let a = 16;
 
 function detectSum(arr, a) {
-    let arr1 = [];
-    for (i of arr) {
-        let b = arr.indexOf(i);
-        while (b != -1) {
-            arr1.push(b);
-            b = arr.indexOf(i, b+1)
-        }
-        // console.log()
-        
-        for (j of arr) {
-               
+    let res = [];
+    loop1: for (i of arr) {
+        if (i == a / 2) {
+            res.push(arr.indexOf(i));
+            arr[arr.indexOf(i)] = undefined;
+        } else {
+            for (j of arr) {
+                if (i + j == a) {
+                    res = [arr.indexOf(i), arr.indexOf(j)];
+                    break loop1;
+                }
+            }
         }
     }
-    console.log(arr1);
-    console.log(arr);
+    return res;
 }
-detectSum(arr, a);
+console.log(detectSum(arr, a));
