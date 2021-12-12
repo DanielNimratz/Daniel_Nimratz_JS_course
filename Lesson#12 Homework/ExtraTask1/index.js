@@ -10,4 +10,4 @@ function continueAlphabet(arr) {
         }
     }
 }
-console.log(continueAlphabet(['a', 'b','c', 'd', 'f', 'g']));
+console.log(continueAlphabet(['h','j','k']));
