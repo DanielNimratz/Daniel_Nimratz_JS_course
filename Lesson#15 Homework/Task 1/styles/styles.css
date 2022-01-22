@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 35px;
+}
+
+h4 {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+h1,
+h3,
+h4 {
+    margin: 0;
+}
+
+i {
+    margin-bottom: 70px;
+    font-size: 80px;
+}
+
+.main {
+    position: relative;
+    width: 80%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEEAD;
+    border-radius: 25px;
+    overflow: hidden;
+    min-width: 450px;
+}
+
+.secondary {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 30%;
+    width: 100%;
+}
+
+.weather {
+    display: flex;
+    background-color: #96CEB4;
+    flex-grow: 2;
+}
+
+.date {
+    flex-grow: 1;
+    background-color: #D9534F;
+}
+
+.tempDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.infDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dateH {
+    font-weight: 200;
+    font-size: 45px;
+}
