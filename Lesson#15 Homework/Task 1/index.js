@@ -3,7 +3,6 @@ const getWeatherData = async (lat, lng) => {
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&lang=ua&appid=${MyApiKey}`;
     let res = await fetch(url);
     let data = await res.json();
-    console.log(data);
     const weather = data['weather'][0]['main'];
     const temp = data['main']['temp'];
     const city = data['name'];
@@ -25,13 +24,13 @@ const getCoords = () => {
 }
 
 function setIcon(weather) {
-    icon = document.getElementById('icon');
+    const icon = document.getElementById('icon');
     if (weather == 'Clouds') {
         icon.className = 'fas fa-cloud-sun';
     } else if (weather == 'Snow') {
-        icon.className += ' fa-snowflake'
+        icon.className += 'far fa-snowflake'
     } else if (weather == 'Clear') {
-        icon.className += ' fa-sun'
+        icon.className = 'far fa-sun'
     }
 }
 
