@@ -16,8 +16,6 @@ const getWeatherData = async (lat, lng) => {
     setWeather(weather);
     setHours(hours);
     setTemps(temps);
-    console.log(temps);
-    console.log(data['list']);
 }
 
 const success = (position) => {
