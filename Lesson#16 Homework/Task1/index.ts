@@ -1,3 +1,4 @@
+export {};
 function getTime(): void {
     let date: Date = new Date();
     let time: string = prettyNum(date.getHours()) + ":" + prettyNum(date.getMinutes()) + ":" + prettyNum(date.getSeconds());
