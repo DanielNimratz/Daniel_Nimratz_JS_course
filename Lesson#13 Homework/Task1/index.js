@@ -23,11 +23,11 @@ const DB = {
     },
 }
 
-function useCollection(out) {
-    return function (inn) {
-        console.log(DB['collections'][out][inn]);
-    }
-}
+// function useCollection(out) {
+//     return function (inn) {
+//         console.log(DB['collections'][out][inn]);
+//     }
+// }
 
 function useCollection1(out) {
     return {
@@ -57,10 +57,10 @@ function useCollection1(out) {
 // const collection = useCollection1('posts');
 // collection.get('posts_1');
 
-// collection.create({
-//     name: 'some name',
-//     text: 'some new text'
-// })
+collection.create({
+    name: 'some name',
+    text: 'some new text'
+})
 
 // collection.deleteOne('posts_1');
 
