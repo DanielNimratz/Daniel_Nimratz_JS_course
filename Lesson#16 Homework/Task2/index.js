@@ -1,35 +1,19 @@
-const hour = document.querySelector('.hours.hands'); 
-console.log(hour);
+const second = document.querySelector('.seconds');
+const minute = document.querySelector('.minutes');
+const hour = document.querySelector('.hours');
 
+function time() {
+    const date = new Date();
+    const sec = date.getSeconds();
+    const min = date.getMinutes();
+    const hr = date.getHours();
 
+    const angSec = sec * 6;
+    const angMin = min * 6;
+    const angHr = hr * 30 + min * 0.5;
 
-
-
-
-
-
-
-
-// const minute = document.querySelector('.minutes');
-// const second = document.querySelector('.seconds');
-
-// function time(){
-//   const date = new Date();
-//   const sec = date.getSeconds();
-//   const secDegree = ((sec/60) * 360) + 90;
-//   second.style.transform = `rotate(${secDegree}deg)`;
-// //   second.innerText = secDegree;
-
-//   const min = date.getMinutes();
-//   const minDegree = ((min/60) * 360) + 90;
-//   minute.style.transform = `rotate(${minDegree}deg)`;
-// //   minute.innerText = minDegree ;
-
-//   const hr = date.getHours();
-//   const hourDegree = ((min/12) * 360) + 90;
-//   hour.style.transform = `rotate(${hourDegree}deg)`;
-// //   hour.innerText = hr;
-// }
-
-// setInterval(time, 1000);
-// TypeError: Cannot read properties of null (reading 'style')
+    second.style.transform = `rotate(${angSec}deg)`;
+    minute.style.transform = `rotate(${angMin}deg)`;
+    hour.style.transform = `rotate(${angHr}deg)`;
+}
+setInterval(time, 1000);

@@ -8,7 +8,6 @@
     display: block;
     margin: 0 auto;
     z-index: 0;
-    /* position: absolute; */
     width: 500px;
     height: 500px;
 }
@@ -20,20 +19,21 @@
 
 .seconds {
     z-index: 3;
-    height: 86%;
+    height: 430px;
+    width: 25px;
     margin: 30px 6px 0 auto;
 }
 
 .minutes {
     z-index: 2;
-    height: 70%;
-    width: 7%;
+    height: 360px;
+    width: 30px;
     margin: 72px 6px 0 auto;
 }
 
 .hours {
     z-index: 1;
-    height: 60%;
-    width: 9%;
+    height: 300px;
+    width: 35px;
     margin: 100px 6px 0 auto;
 }
