@@ -1,0 +1,57 @@
+h1, h2, h3, h4, p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.comInput {
+    resize: both;
+    min-width: 100%;
+    margin-right: 10px;
+}
+
+.bigDiv {
+    border: 3px solid;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    resize: both;
+}
+
+.com {
+    /* text-align: end; */
+    width: 50%;
+    margin-left: 50%;
+}
+
+.comments {
+    padding: 10px;
+}
+
+.descr_txt {
+    resize: both;
+    width: 100%;
+    min-height: 2em;
+}
+
+.pretty_button {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin-top: 10px;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
