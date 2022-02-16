@@ -21,7 +21,6 @@ add_button.addEventListener('click', () => {
     copy.querySelector('.descr').innerHTML = descr_input.value;
     
     ps = copy.querySelector('.com').querySelector('.comments');
-    // els = ps.getElementsByTagName('p');
 
     while (ps.firstChild) {
         ps.removeChild(ps.lastChild);
